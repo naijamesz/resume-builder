@@ -5,9 +5,9 @@ const apiKey = process.env.OPENAI_API_KEY;
 const openai = new OpenAI({ apiKey });
 export const runtime = 'edge';
 
-export async function POST(request: any) {
+export async function POST(req: Request): Promise<Response> {
   try {
-    const forwardedProps = await request.json();
+    const forwardedProps = await req.json();
 
     const stream = openai.beta.chat.completions
       .stream({
