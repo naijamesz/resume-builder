@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -33,9 +33,9 @@ export default function Home() {
             </div>
             {/* <!-- Buttons --> */}
             <div className='text-center'>
-              <a
-                className='inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-purple-600 shadow-lg shadow-transparent hover:shadow-blue-500/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-100 focus:ring-offset-2 focus:ring-offset-white py-5 px-7 dark:focus:ring-offset-slate-800'
-                href='#'>
+              <Link
+                className='inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white py-3 px-6 dark:focus:ring-offset-gray-800'
+                href='/resumeandcoverletter'>
                 Get started
                 <svg
                   className='flex-shrink-0 w-4 h-4'
@@ -50,7 +50,7 @@ export default function Home() {
                   stroke-linejoin='round'>
                   <path d='m9 18 6-6-6-6' />
                 </svg>
-              </a>
+              </Link>
             </div>
             {/* <!-- End Buttons --> */}
           </div>
